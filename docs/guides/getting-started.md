@@ -47,8 +47,10 @@ go install github.com/masonhuemmer/dops@latest
 
 ### Docker
 
+The image is private. Run `docker login ghcr.io` with a token that has `read:packages` and access to the package before pulling.
+
 ```sh
-docker pull ghcr.io/rundops/dops:latest
+docker pull ghcr.io/masonhuemmer/dops:latest
 ```
 
 ### From Source
