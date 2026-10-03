@@ -84,20 +84,20 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/rundops/dops",
+        link: "https://github.com/masonhuemmer/dops",
       },
     ],
 
     footer: {
       message:
-        'Released under the <a href="https://github.com/rundops/dops/blob/main/LICENSE">MIT License</a>.',
+        'Released under the <a href="https://github.com/masonhuemmer/dops/blob/main/LICENSE">MIT License</a>.',
       copyright:
         'Copyright © 2025 Mason Huemmer',
     },
 
     editLink: {
       pattern:
-        "https://github.com/rundops/dops/edit/main/docs/:path",
+        "https://github.com/masonhuemmer/dops/edit/main/docs/:path",
       text: "Edit this page on GitHub",
     },
 
