@@ -56,6 +56,7 @@ jobs:
                   "Authorization": "Bearer " + credential,
                   "Accept": "application/vnd.oci.image.index.v1+json,application/vnd.oci.image.manifest.v1+json,application/vnd.docker.distribution.manifest.list.v2+json,application/vnd.docker.distribution.manifest.v2+json"}))
           old_token = token(source, "pull")
+          print("Source latest digest: " + request(source, "manifests/latest", old_token).headers["Docker-Content-Digest"], flush=True)
           tags = json.load(request(source, "tags/list?n=1000", old_token))["tags"]
           assert tags and len(tags) < 1000, "Container tag enumeration incomplete"
           for tag in tags:
