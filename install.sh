@@ -1,9 +1,9 @@
 #!/bin/sh
 # dops installer — downloads the latest release binary for your platform.
-# Usage: curl -fsSL https://raw.githubusercontent.com/rundops/dops/main/install.sh | sh
+# Usage: curl -fsSL https://raw.githubusercontent.com/masonhuemmer/dops/main/install.sh | sh
 set -eu
 
-REPO="rundops/dops"
+REPO="masonhuemmer/dops"
 INSTALL_DIR="${DOPS_INSTALL_DIR:-/usr/local/bin}"
 
 # Detect OS and architecture.
