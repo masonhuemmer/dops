@@ -66,10 +66,10 @@ if ($expected -eq $actual) { "OK" } else { "MISMATCH" }
 cosign verify \
   --certificate-identity-regexp "https://github.com/(rundops|masonhuemmer)/dops" \
   --certificate-oidc-issuer "https://token.actions.githubusercontent.com" \
-  ghcr.io/rundops/dops:v0.1.0
+  ghcr.io/masonhuemmer/dops:v0.13.1
 ```
 
-Replace `v0.1.0` with the version you pulled.
+Replace `v0.13.1` with the version you pulled.
 
 ## What Gets Signed
 

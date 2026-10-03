@@ -29,12 +29,14 @@ Claude can now discover and execute your runbooks as tools.
 
 ## Docker
 
+The image is private. Run `docker login ghcr.io` with a token that has `read:packages` and access to the package before running the container.
+
 Run the MCP server in a container:
 
 ```sh
 docker run -i --rm \
   -v ~/.dops:/data/dops \
-  ghcr.io/rundops/dops:latest
+  ghcr.io/masonhuemmer/dops:latest
 ```
 
 The container uses `DOPS_HOME=/data/dops` and runs `dops mcp serve --transport stdio` by default.
@@ -45,7 +47,7 @@ For HTTP transport:
 docker run -d --rm \
   -v ~/.dops:/data/dops \
   -p 8080:8080 \
-  ghcr.io/rundops/dops:latest \
+  ghcr.io/masonhuemmer/dops:latest \
   dops mcp serve --transport http --port 8080
 ```
 
