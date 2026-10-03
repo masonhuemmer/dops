@@ -9,13 +9,13 @@ title: Getting Started
 ### Quick Install (recommended)
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/rundops/dops/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/masonhuemmer/dops/main/install.sh | sh
 ```
 
 Downloads the latest binary for your platform and installs to `/usr/local/bin`. Set `DOPS_INSTALL_DIR` to change the location:
 
 ```sh
-DOPS_INSTALL_DIR=~/.local/bin curl -fsSL https://raw.githubusercontent.com/rundops/dops/main/install.sh | sh
+DOPS_INSTALL_DIR=~/.local/bin curl -fsSL https://raw.githubusercontent.com/masonhuemmer/dops/main/install.sh | sh
 ```
 
 ### Windows (winget)
@@ -27,22 +27,22 @@ winget install RunDops.dops
 ### Windows (Scoop)
 
 ```sh
-scoop bucket add rundops https://github.com/rundops/scoop-bucket.git
+scoop bucket add masonhuemmer https://github.com/masonhuemmer/scoop-bucket.git
 scoop install dops
 ```
 
-Or download the latest `.zip` from the [releases page](https://github.com/rundops/dops/releases/latest) and add `dops.exe` to your PATH.
+Or download the latest `.zip` from the [releases page](https://github.com/masonhuemmer/dops/releases/latest) and add `dops.exe` to your PATH.
 
 ### Homebrew (macOS/Linux)
 
 ```sh
-brew install rundops/tap/dops
+brew install masonhuemmer/tap/dops
 ```
 
 ### Go
 
 ```sh
-go install github.com/rundops/dops@latest
+go install github.com/masonhuemmer/dops@latest
 ```
 
 ### Docker
@@ -54,7 +54,7 @@ docker pull ghcr.io/rundops/dops:latest
 ### From Source
 
 ```sh
-git clone https://github.com/rundops/dops.git
+git clone https://github.com/masonhuemmer/dops.git
 cd dops
 make install
 ```

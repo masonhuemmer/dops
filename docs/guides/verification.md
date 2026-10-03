@@ -36,12 +36,12 @@ Each GitHub Release includes:
 cosign verify-blob \
   --certificate checksums.txt.pem \
   --signature checksums.txt.sig \
-  --certificate-identity-regexp "https://github.com/rundops/dops" \
+  --certificate-identity-regexp "https://github.com/(rundops|masonhuemmer)/dops" \
   --certificate-oidc-issuer "https://token.actions.githubusercontent.com" \
   checksums.txt
 ```
 
-A successful result prints `Verified OK`.
+A successful result prints `Verified OK`. The identity pattern accepts releases signed before and after the repository moved from `rundops` to `masonhuemmer`.
 
 ### Step 2: Verify the archive checksum
 
@@ -64,7 +64,7 @@ if ($expected -eq $actual) { "OK" } else { "MISMATCH" }
 
 ```sh
 cosign verify \
-  --certificate-identity-regexp "https://github.com/rundops/dops" \
+  --certificate-identity-regexp "https://github.com/(rundops|masonhuemmer)/dops" \
   --certificate-oidc-issuer "https://token.actions.githubusercontent.com" \
   ghcr.io/rundops/dops:v0.1.0
 ```

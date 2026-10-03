@@ -14,7 +14,7 @@ hero:
       link: /guides/getting-started
     - theme: alt
       text: View on GitHub
-      link: https://github.com/rundops/dops
+      link: https://github.com/masonhuemmer/dops
 
 features:
   - icon: "🖥️"
@@ -140,7 +140,7 @@ features:
 <div class="demo-section">
   <h2>Terminal UI</h2>
   <p>Navigate catalogs, fill parameters, confirm risk, and watch live output — all from the terminal.</p>
-  <img src="https://raw.githubusercontent.com/rundops/dops/main/assets/demo.gif" alt="dops TUI demo" />
+  <img src="https://raw.githubusercontent.com/masonhuemmer/dops/main/assets/demo.gif" alt="dops TUI demo" />
 </div>
 
 <div class="demo-divider"></div>
@@ -148,7 +148,7 @@ features:
 <div class="demo-section">
   <h2>Web UI</h2>
   <p>The same experience in the browser. Launch with <code>dops open</code>.</p>
-  <img src="https://raw.githubusercontent.com/rundops/dops/main/assets/web-demo.gif" alt="dops web UI demo" />
+  <img src="https://raw.githubusercontent.com/masonhuemmer/dops/main/assets/web-demo.gif" alt="dops web UI demo" />
 </div>
 
 <div class="demo-divider"></div>
@@ -156,7 +156,7 @@ features:
 <div class="demo-section">
   <h2>MCP Server</h2>
   <p>Expose runbooks as tools for AI agents. Run with <code>dops mcp serve</code>.</p>
-  <img src="https://raw.githubusercontent.com/rundops/dops/main/assets/mcp-demo.gif" alt="dops MCP demo" />
+  <img src="https://raw.githubusercontent.com/masonhuemmer/dops/main/assets/mcp-demo.gif" alt="dops MCP demo" />
 </div>
 
 <div class="demo-divider"></div>
