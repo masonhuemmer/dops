@@ -34,10 +34,10 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.GH_TOKEN }}
       - name: Preserve container tags and digests
         env:
-          REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REGISTRY_TOKEN: ${{ secrets.GH_TOKEN }}
           REGISTRY_USER: ${{ github.actor }}
           DESTINATION: ${{ github.repository }}
         run: |
