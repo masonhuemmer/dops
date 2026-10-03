@@ -13,7 +13,7 @@ import (
 
 const (
 	// githubRepo is the owner/repo for the GitHub Releases API.
-	githubRepo = "rundops/dops"
+	githubRepo = "masonhuemmer/dops"
 
 	// cacheTTL controls how often we re-check for updates.
 	cacheTTL = 1 * time.Hour

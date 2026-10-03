@@ -23,9 +23,9 @@
     &middot;
     <a href="https://rundops.dev/">Documentation</a>
     &middot;
-    <a href="https://github.com/rundops/dops/issues">Report Bug</a>
+    <a href="https://github.com/masonhuemmer/dops/issues">Report Bug</a>
     &middot;
-    <a href="https://github.com/rundops/dops/issues">Request Feature</a>
+    <a href="https://github.com/masonhuemmer/dops/issues">Request Feature</a>
   </p>
 </div>
 
@@ -170,7 +170,7 @@ dops is built for DevOps and platform engineering teams who need a consistent, s
 ### Quick install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/rundops/dops/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/masonhuemmer/dops/main/install.sh | sh
 ```
 
 Installs the latest binary to `/usr/local/bin`. Set `DOPS_INSTALL_DIR` to change the location.
@@ -184,23 +184,23 @@ winget install RunDops.dops
 Or via Scoop:
 
 ```bash
-scoop bucket add rundops https://github.com/rundops/scoop-bucket.git
+scoop bucket add masonhuemmer https://github.com/masonhuemmer/scoop-bucket.git
 scoop install dops
 ```
 
-Or download the latest `.zip` from the [releases page](https://github.com/rundops/dops/releases/latest) and add `dops.exe` to your PATH.
+Or download the latest `.zip` from the [releases page](https://github.com/masonhuemmer/dops/releases/latest) and add `dops.exe` to your PATH.
 
 ### Homebrew
 
 ```bash
-brew tap rundops/tap
+brew tap masonhuemmer/tap
 brew install dops
 ```
 
 ### Go
 
 ```bash
-go install github.com/rundops/dops@latest
+go install github.com/masonhuemmer/dops@latest
 ```
 
 ### Docker (MCP server)
@@ -212,7 +212,7 @@ docker run -i -v ~/.dops:/data/dops ghcr.io/rundops/dops:latest
 ### From source
 
 ```bash
-git clone https://github.com/rundops/dops.git
+git clone https://github.com/masonhuemmer/dops.git
 cd dops
 make build
 ./bin/dops
@@ -439,7 +439,7 @@ make ci           # Run CI checks (vet + test + build)
 ## Getting Help
 
 - [Documentation](https://rundops.dev/) — guides, reference, and configuration
-- [GitHub Issues](https://github.com/rundops/dops/issues) — bug reports and feature requests
+- [GitHub Issues](https://github.com/masonhuemmer/dops/issues) — bug reports and feature requests
 - [CLI Reference](https://rundops.dev/reference/cli) — all commands and flags
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -469,13 +469,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[release-shield]: https://img.shields.io/github/v/release/rundops/dops?style=for-the-badge
-[release-url]: https://github.com/rundops/dops/releases
-[go-shield]: https://img.shields.io/github/go-mod/go-version/rundops/dops?style=for-the-badge
+[release-shield]: https://img.shields.io/github/v/release/masonhuemmer/dops?style=for-the-badge
+[release-url]: https://github.com/masonhuemmer/dops/releases
+[go-shield]: https://img.shields.io/github/go-mod/go-version/masonhuemmer/dops?style=for-the-badge
 [go-url]: https://go.dev/
-[license-shield]: https://img.shields.io/github/license/rundops/dops?style=for-the-badge
-[license-url]: https://github.com/rundops/dops/blob/main/LICENSE
-[tests-shield]: https://img.shields.io/github/actions/workflow/status/rundops/dops/test.yml?style=for-the-badge&label=tests
-[tests-url]: https://github.com/rundops/dops/actions/workflows/test.yml
-[security-shield]: https://img.shields.io/github/actions/workflow/status/rundops/dops/security.yml?style=for-the-badge&label=security
-[security-url]: https://github.com/rundops/dops/actions/workflows/security.yml
+[license-shield]: https://img.shields.io/github/license/masonhuemmer/dops?style=for-the-badge
+[license-url]: https://github.com/masonhuemmer/dops/blob/main/LICENSE
+[tests-shield]: https://img.shields.io/github/actions/workflow/status/masonhuemmer/dops/test.yml?style=for-the-badge&label=tests
+[tests-url]: https://github.com/masonhuemmer/dops/actions/workflows/test.yml
+[security-shield]: https://img.shields.io/github/actions/workflow/status/masonhuemmer/dops/security.yml?style=for-the-badge&label=security
+[security-url]: https://github.com/masonhuemmer/dops/actions/workflows/security.yml
