@@ -26,7 +26,7 @@ ENV PATH="/opt/dops/bin:${PATH}"
 
 # DOPS_HOME is where dops looks for config.json, catalogs/, and themes/.
 # Mount your local .dops directory here:
-#   docker run -i -v ~/.dops:/data/dops ghcr.io/rundops/dops
+#   docker run -i -v ~/.dops:/data/dops ghcr.io/masonhuemmer/dops
 ENV DOPS_HOME=/data/dops
 
 RUN mkdir -p /data/dops

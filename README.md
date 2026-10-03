@@ -205,8 +205,10 @@ go install github.com/masonhuemmer/dops@latest
 
 ### Docker (MCP server)
 
+The image is private. Run `docker login ghcr.io` with a GitHub token that has `read:packages` and access to this package before pulling.
+
 ```bash
-docker run -i -v ~/.dops:/data/dops ghcr.io/rundops/dops:latest
+docker run -i -v ~/.dops:/data/dops ghcr.io/masonhuemmer/dops:latest
 ```
 
 ### From source
@@ -360,12 +362,14 @@ Add to `.claude/settings.json`:
 
 ### Docker
 
+Authenticate as described in [Docker installation](#docker-mcp-server) before running the private image.
+
 ```bash
 # stdio transport
-docker run -i -v ~/.dops:/data/dops ghcr.io/rundops/dops:latest
+docker run -i -v ~/.dops:/data/dops ghcr.io/masonhuemmer/dops:latest
 
 # HTTP transport
-docker run -p 8080:8080 -v ~/.dops:/data/dops ghcr.io/rundops/dops:latest --transport http --port 8080
+docker run -p 8080:8080 -v ~/.dops:/data/dops ghcr.io/masonhuemmer/dops:latest --transport http --port 8080
 ```
 
 See the [MCP guide](https://rundops.dev/guides/mcp) for details on risk controls, resources, and streaming.
